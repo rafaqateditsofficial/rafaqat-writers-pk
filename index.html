@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rafaqat Writers – Islamic Hadith &amp; Quran Quotes</title>
-<meta name="description" content="Rafaqat Writers: a beautiful collection of Hadith, Quran verses and Islamic reminders in Urdu.">
+<title>Rafaqat Writers - Islamic Knowledge for a Better Life</title>
+<meta name="description" content="Rafaqat Writers: Quran verses, Hadith and sayings of Hazrat Ali in Urdu, designed as beautiful shareable cards.">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap">
+<style>:root{--hero:url("01-sunset-mosque.svg");--ban:url("04-arches.svg")}</style>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>🌙 Rafaqat Writers</h1>
-<p>Hadith, Quran &amp; Islamic reminders</p>
-<div style="margin-top:10px"><button class="chip" style="color:#fff;border-color:#fff" id="authBtn">Login / Sign up</button></div>
-</header>
-<nav id="cats"></nav>
-<div class="bar"><input id="q" type="search" placeholder="Search…"></div>
-<main id="grid"></main>
-<footer>© Rafaqat Writers · Share good words with everyone</footer>
+<header><div class="w"><nav>
+<a class="brand" href="#" onclick="return false"><img src="logo-emblem.png" alt="Rafaqat Writers logo"><span>RAFAQAT<small>WRITERS</small></span></a>
+<div class="links"><a href="#" data-v="All">Quran &amp; Hadith</a><a href="#" data-info="1">About Us</a></div>
+<button class="gb" id="authBtn">Login / Sign up</button></nav></div></header>
 
-<dialog id="dlg">
-<h3 id="dt" style="margin-top:0">Login</h3>
-<input id="u" placeholder="Username" autocomplete="username">
-<input id="p" type="password" placeholder="Password" autocomplete="current-password">
-<div class="err" id="err"></div>
-<div class="row"><button class="btn" id="go">Login</button><button class="chip" id="sw">New account</button><button class="chip" id="cl">Close</button></div>
-</dialog>
+<div class="hero" id="top"><div class="w"><div class="eyebrow">WELCOME TO RAFAQAT WRITERS</div>
+<h1>Islamic Knowledge<br>for a <b>Better Life</b></h1>
+<p>Read Quran verses, Hadith and sayings of Hazrat Ali in Urdu, designed as cards you can copy and share.</p>
+<div class="row"><button class="gb" id="exp">Explore Quotes &rarr;</button><button class="gb o" data-info="1">About Us</button></div></div></div>
 
+<div class="tiles" id="tiles">
+<div class="tile" data-c="Quran"><i>&#128214;</i><b>Quran</b><span>Verses in Urdu</span></div>
+<div class="tile" data-c="Hadith"><i>&#128332;</i><b>Hadith</b><span>With references</span></div>
+<div class="tile" data-c="Hazrat Ali"><i>&#9997;&#65039;</i><b>Hazrat Ali</b><span>Wise sayings</span></div>
+<div class="tile" data-c="Favourites"><i>&#9829;</i><b>Favourites</b><span>Save after login</span></div>
+<div class="tile" data-c="All"><i>&#10022;</i><b>All Quotes</b><span>Browse everything</span></div></div>
+
+<section><div class="w"><h2 class="t2" style="text-align:center">Quote of the Day</h2><div class="qodw" id="qod"></div></div></section>
+
+<section id="gallery"><div class="w">
+<div class="sec"><h2 class="t2">Quote Collection</h2><span id="cnt"></span></div>
+<div class="tools" id="cats"></div>
+<div class="bar"><input id="q" type="search" placeholder="Search quotes or sources..."></div>
+<main id="grid"></main></div></section>
+
+<div class="banner"><div>Read &#10022; Learn &#10022; Grow</div><small>RAFAQAT WRITERS</small></div>
+
+<section class="about" id="about"><div class="w"><h2 class="t2" style="text-align:center">About Us</h2>
+<p>Rafaqat Writers shares Quran verses, Hadith and sayings of Hazrat Ali in Urdu, so good words reach more people. Please verify references with a trusted scholar before sharing.</p></div></section>
+
+<footer><img src="logo-full.png" alt="Rafaqat Writers"><em>Islamic knowledge is the light that guides us in every step of life.</em>&copy; Rafaqat Writers</footer>
+<div class="toast" id="toast"></div>
+<dialog id="view" class="view"><div class="vh"><b id="vt" style="color:var(--gold)"></b><button class="chip" id="vc">Close</button></div><div id="vgrid" class="vg"></div></dialog>
+<dialog id="info"><h3 style="margin-top:0;color:var(--gold)">About Us</h3><p>Rafaqat Writers shares Quran verses, Hadith and sayings of Hazrat Ali in Urdu, so good words reach more people. Please verify references with a trusted scholar before sharing.</p><button class="chip" id="ic">Close</button></dialog>
+<dialog id="dlg"><h3 id="dt" style="margin-top:0">Login</h3><input id="u" placeholder="Username" autocomplete="username"><input id="p" type="password" placeholder="Password" autocomplete="current-password"><div class="err" id="err"></div><div class="row2"><button class="btn" id="go">Login</button><button class="chip" id="sw">New account</button><button class="chip" id="cl">Close</button></div></dialog>
 <script src="script.js"></script>
-</body>
-</html>
+</body></html>
